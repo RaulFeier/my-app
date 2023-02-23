@@ -1,0 +1,6 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "clang-format.executable": "/usr/bin/clang-format"
+}
