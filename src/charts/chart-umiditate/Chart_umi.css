@@ -1,7 +1,7 @@
-.Chart {
-    position: fixed;
+.Chart_umi {
+    position: absolute;
     z-index: 100;  
-    top:30%;  
+    top:100%;  
     left:32%;  
     margin:-100px 0 0 -100px;  
     width:900px;  

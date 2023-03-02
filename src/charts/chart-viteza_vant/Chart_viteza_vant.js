@@ -1,6 +1,6 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import './Chart.css';
+import './Chart_viteza_vant.css';
 // import { GetNumbers} from './input';
 
 import {
@@ -18,12 +18,12 @@ chartjs.register(LineElement, CategoryScale, LinearScale, PointElement);
 
 // const arr = [4, 5, 3, 7, 8 ];
 
-function Chart() {
+function Chart_viteza_vant() {
   const data = {
     labels : ['01:00', '02:00','03:00', '04:00','05:00', '06:00','07:00', '08:00','09:00', '10:00'],
     datasets: [{
       labels: 'Sales of the week',
-      data: [3, 5, 6, 7, 4],
+      data: [3, 5, 6, 7, 4, 7, 1, 2, 8, 6],
       backgroundColor: 'aqua',
       borderColor: 'black',
       pointBorderColor: 'aqua'
@@ -37,8 +37,8 @@ function Chart() {
     },
     scales: {
       y: {
-        min: 3,
-        max: 9
+        min: 0,
+        max: 10
       },
       x:{
         min: 0,
@@ -48,8 +48,8 @@ function Chart() {
   }
   
   return (
-    <div className="Chart">
-      <h1>Temperatura</h1>
+    <div className="Chart_viteza_vant">
+      <h1>Viteza Vantului</h1>
       <Line
         data = {data}
         options = {options}
@@ -58,4 +58,4 @@ function Chart() {
   );
 }
 
-export default Chart; 
+export default Chart_viteza_vant; 

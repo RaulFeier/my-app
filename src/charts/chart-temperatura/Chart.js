@@ -23,7 +23,7 @@ function Chart() {
     labels : ['01:00', '02:00','03:00', '04:00','05:00', '06:00','07:00', '08:00','09:00', '10:00'],
     datasets: [{
       labels: 'Sales of the week',
-      data: [3, 5, 6, 7, 4],
+      data: [3, 5, 6, 7, 4, 7, 1, 2, 8, 6],
       backgroundColor: 'aqua',
       borderColor: 'black',
       pointBorderColor: 'aqua'
@@ -37,8 +37,8 @@ function Chart() {
     },
     scales: {
       y: {
-        min: 3,
-        max: 9
+        min: 0,
+        max: 10
       },
       x:{
         min: 0,
@@ -49,7 +49,7 @@ function Chart() {
   
   return (
     <div className="Chart">
-      <h1>Umiditate</h1>
+      <h1>Temperatura</h1>
       <Line
         data = {data}
         options = {options}
